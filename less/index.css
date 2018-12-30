@@ -1,0 +1,256 @@
+#header {
+  border-bottom: 1px solid #ccc;
+}
+#header .row {
+  line-height: 40px;
+}
+#header .row > div {
+  font-size: 12px;
+  text-align: center;
+}
+#header .row > div a {
+  color: #ccc;
+}
+#header .row > div a img {
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+#header .row > div a:hover {
+  text-decoration: none;
+}
+#header .row > div a:hover img {
+  display: block;
+}
+#header .row > div button {
+  color: #000;
+  text-decoration: none;
+}
+#header .row > div ~ div {
+  border-left: 1px solid #ccc;
+}
+#nav {
+  background-color: #fff;
+  margin-bottom: 0;
+}
+#nav .navbar-header .navbar-toggle {
+  margin-top: 23px;
+}
+#nav .navbar-header .navbar-brand {
+  height: 80px;
+  line-height: 50px;
+}
+#nav .navbar-header .navbar-brand i {
+  font-size: 30px;
+}
+#nav .navbar-header .navbar-brand i.icon-icon {
+  color: red;
+}
+#nav .navbar-header .navbar-brand i.icon-logo {
+  color: #000;
+}
+#nav .navbar-collapse .navbar-nav li a {
+  height: 80px;
+  line-height: 50px;
+}
+#nav .navbar-collapse .navbar-nav li a:hover {
+  border-bottom: 2px solid red;
+}
+#nav .navbar-collapse .navbar-nav li.active a {
+  border-bottom: 2px solid red;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  #slide .item {
+    height: 410px;
+    overflow: hidden;
+  }
+}
+#slide .large-image {
+  max-width: 2000px;
+  width: 2000px;
+  height: 410px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#slide .small-image {
+  width: 100%;
+}
+#feature {
+  padding: 40px 0;
+}
+#feature .media {
+  margin-top: 10px;
+  width: 210px;
+  margin: 0 auto;
+}
+#feature .media > a {
+  color: #666;
+  display: block;
+}
+#feature .media > a:hover {
+  color: #e92322;
+  text-decoration: none;
+}
+#booking {
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+#products {
+  padding: 40px 0;
+  background-color: #eee;
+}
+#products .nav-tabs li.active a {
+  background-color: transparent;
+  border-bottom: 3px solid #e92322;
+}
+#products .nav-tabs li a {
+  border: 0;
+  color: #666;
+  font-size: 16px;
+}
+#products .tab-content .product {
+  background-color: #fff;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+#products .tab-content .product.active {
+  background-color: #e92322;
+  color: #fff;
+}
+#products .tab-content .product.active::before {
+  content: "\e915";
+  font-family: 'itcast';
+  font-size: 30px;
+  position: absolute;
+  left: 0px;
+  top: -6px;
+}
+#products .tab-content .product .product-left {
+  flex: 1;
+  padding: 15px;
+}
+#products .tab-content .product .product-left h3 {
+  text-align: center;
+  font-size: 18px;
+}
+#products .tab-content .product .product-left .row div {
+  margin-bottom: 10px;
+}
+#products .tab-content .product .product-left .row div:nth-child(2n) {
+  text-align: right;
+}
+#products .tab-content .product .product-left .row div p {
+  margin-bottom: 0;
+}
+#products .tab-content .product .product-right {
+  width: 120px;
+  border-left: 1px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* 判断如果屏幕宽度在992-1200 之间设置右边盒子的宽度固定为100px */
+}
+@media (min-width: 320px) and (max-width: 340px) {
+  #products .tab-content .product .product-right {
+    width: 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #products .tab-content .product .product-right {
+    width: 100px;
+  }
+}
+#products .tab-content .product .product-right::before,
+#products .tab-content .product .product-right::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #eee;
+  left: -8px;
+}
+#products .tab-content .product .product-right::before {
+  top: -8px;
+}
+#products .tab-content .product .product-right::after {
+  bottom: -8px;
+}
+#products .tab-content .product .product-right p {
+  margin-bottom: 0px;
+}
+#products .tab-content .product .product-right p strong {
+  font-size: 60px;
+}
+#products .tab-content .product .product-right .tooltips {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+}
+#products .tab-content .product .product-right .tooltips button:first-of-type {
+  border: 1px solid blue;
+}
+#products .tab-content .product .product-right .tooltips button:last-of-type {
+  border: 1px solid yellow;
+}
+#news {
+  padding: 40px 0;
+}
+#news .container .row > div > h3 {
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px dashed #ccc;
+  position: relative;
+}
+#news .container .row > div > h3::after {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  right: -10px;
+  bottom: -5px;
+  border: 1px solid #ccc;
+}
+#news .container .row > div .nav-tabs {
+  border-bottom: 0;
+}
+@media (max-width: 991px) {
+  #news .container .row > div .nav-tabs li {
+    width: 25%;
+  }
+}
+#news .container .row > div .nav-tabs li a {
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 0;
+  color: #ccc;
+}
+#news .container .row > div .nav-tabs li a:hover {
+  background-color: #e92322;
+}
+#news .container .row > div .nav-tabs li a i {
+  font-size: 30px;
+}
+#news .container .row > div .nav-tabs li.active a {
+  background-color: #e92322;
+}
+#news .container .row > div .tab-content ul > li {
+  list-style: none;
+}
+#news .container .row > div .tab-content ul > li > a {
+  color: #666;
+  line-height: 40px;
+  text-decoration: none;
+}

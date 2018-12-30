@@ -1,0 +1,28 @@
+#header {
+    border-bottom: 1px solid #ccc;
+}
+.row>div{
+    border-right: 1px solid #ccc;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12px;
+
+}
+.row>div:last-child{
+    border-right: 0px;
+}
+.row>div a img{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+}
+#header .row > div a:hover {
+    text-decoration: none;
+  }
+.row>div a:hover >img{
+    display: block;
+}

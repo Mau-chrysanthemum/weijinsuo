@@ -1,0 +1,70 @@
+#news{
+    padding: 40px 0;
+    .container{
+        .row{
+            >div{
+                >h3{
+                    text-align: center;
+                    line-height: 40px;
+                    border-bottom: 1px dashed @border-color;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        right: -10px;
+                        bottom: -5px;
+                        border: 1px solid @border-color;
+                    }
+                }
+                .nav-tabs{
+                    border-bottom: 0;
+                    li{
+                        @media(max-width: 992px) {
+                            width: 25%;
+                            a{
+                                width: 60px;
+                                height: 60px;
+                                /* a是块级元素默认有宽高和li一样  固定a为60px 设置块居中 */
+                                margin: 0px auto;
+                            }
+                          }
+                        a {
+                           border-radius: 50%;
+                           margin-bottom: 20px;
+                           border: 0;
+                           color: #ccc;
+                           &:hover{
+                               background-color: @main-color;
+                           }
+                           i {
+                               font-size: 30px;
+                             }
+                        }
+                        &.active{
+                            a{
+                            background-color: @main-color;
+                            }
+                        }
+                    }
+                }
+                .tab-content {
+                    ul {
+                        >li {
+                            list-style: none;
+                            >a {
+                                color: @a-color;
+                                line-height: 40px;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

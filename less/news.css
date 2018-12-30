@@ -1,0 +1,6 @@
+#news .container .row div h3 {
+  text-align: center;
+  line-height: 40px;
+  border-bottom: 1px dashed;
+  position: relative;
+}

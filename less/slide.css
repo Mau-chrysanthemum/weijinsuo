@@ -1,0 +1,17 @@
+@media (min-width: 768px) {
+  #slide .item {
+    height: 410px;
+    overflow: hidden;
+  }
+}
+#slide .large-image {
+  max-width: 2000px;
+  width: 2000px;
+  height: 410px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#slide .small-image {
+  width: 100%;
+}
